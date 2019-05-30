@@ -1,5 +1,4 @@
-<form action="<%= people_form_action(@person) %>" method="post">
-
+<form action="<%= people_form_action(@person) %>" method="post" id="<%= people_form_id(@person) %>" class="<%= people_form_class(@person) %>">
 <input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
 
 <label for="first_name">First Name:</label>
