@@ -11,7 +11,7 @@ end
 
 def people_form_action(person)
     if person.new_record?
-        @action = "/people/"
+        @action = "/people/new"
     else 
         @action = "/people/person.id"
     end 

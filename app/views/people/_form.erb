@@ -1,7 +1,4 @@
-<form action="/people/new" method="post" id="new-person" class="new-person" value="<%= people_form_action(@person) %>">
-
-<form action="<%= "/people/#{@person.id}" %>" method="post" id="#{@person.id}" "class="edit-person">
-
+<form action="<%= people_form_action(@person) %>" method="post">
 
 <input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
 
@@ -16,6 +13,5 @@
   
   <input type="submit" />
   
-</form>
 </form>
  
