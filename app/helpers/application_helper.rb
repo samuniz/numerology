@@ -20,9 +20,9 @@ end
 
 def people_form_class(person)
   if person.new_record?
-    @class = "/people/new"
+    @class = "new-person"
   else 
-    @class = "people/#{@person.id}"
+    @class = "edit-person"
   end 
   @class 
 end 
@@ -31,7 +31,7 @@ def people_form_id(person)
   if person.new_record?
     @id = "new-person"
   else 
-    @id = "#{@person.id}"
+    @id = "person-#{@person.id}"
   end 
   @id
 end 

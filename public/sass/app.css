@@ -1,0 +1,21 @@
+/*COMMON.SASS*/
+body {
+  background: non-repeat;
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  body {
+    background-image: url(../images/numbers.png);
+  }
+}
+
+h1 {
+  font-family: balloon-urw, sans-serif;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=app.css.map */
