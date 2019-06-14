@@ -11,6 +11,9 @@ gem 'faker', '~> 1.4.3'
 
 gem 'rack', '~> 2.0', '>= 2.0.6'
 gem 'rack-test', '~> 1.1'
-
 gem 'shotgun'
+
+group :development, :test do
+    gem "rerun", git: "https://github.com/alexch/rerun.git"
+  end
 

@@ -1,15 +1,101 @@
 /*COMMON.SASS*/
-body {
-  background: non-repeat;
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    body {
-      background-image: url(../images/numbers.png); } }
+html {
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+body, a {
+  font-family: Merriweather, serif;
+  font-size: 16px;
+  color: #080E3C;
+  text-decoration: none; }
+  body #edit, a #edit {
+    color: #F6EEF9; }
 
 h1 {
-  font-family: balloon-urw, sans-serif;
-  color: #FFFFFF; }
+  font-family: Diplomata, cursive;
+  color: #A514C7;
+  font-size: 14px;
+  text-align: left; }
+
+h2 {
+  font-family: Aref Ruqaa, serif;
+  color: #833B94;
+  font-size: 64px;
+  text-align: center; }
+
+head {
+  padding: 15%;
+  margin: 10%; }
+
+.container {
+  padding: 0;
+  margin: 5%; }
+  .container form {
+    width: 30%;
+    margin: 5%;
+    display: block;
+    font-size: 32px;
+    display: block;
+    margin-left: 35%; }
+
+button {
+  background-color: #A514C7;
+  color: #F6EEF9;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 10px black;
+  margin: 10%; }
+  button:hover {
+    background-color: darken #A514C7, 20%; }
+  button:active {
+    background-color: #4201FA;
+    box-shadow: 0 5px #gray;
+    transform: translateY(8px);
+    border-radius: 12px; }
+
+input {
+  width: 100%;
+  background-color: white;
+  font-size: 32px;
+  margin: 2%; }
+
+table button {
+  background-color: #A514C7;
+  color: #F6EEF9;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 10px black; }
+  table button:hover {
+    background-color: darken #A514C7, 20%; }
+  table button:active {
+    background-color: #4201FA;
+    box-shadow: 0 5px #gray;
+    transform: translateY(8px);
+    border-radius: 12px; }
+
+.submit-button {
+  margin-left: 20%; }
+
+table {
+  width: 80%;
+  margin-left: 8%; }
+
+thead {
+  font-size: 32px;
+  color: #833B94;
+  text-align: left;
+  margin-top: 20%; }

@@ -201,16 +201,6 @@
 		"oAP": "/Gemfile.lock",
 		"oF": 0
 		},
-	"/public/app.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/app-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/public/css/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -221,13 +211,16 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/public/css/app.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
+	"/public/images/background.png": {
+		"ft": 32768,
+		"iS": 1213351,
 		"oA": 0,
-		"oAP": "/public/css/app.css.map",
-		"oF": 0
+		"oAP": "/public/images/background.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/public/images/numbers.png": {
 		"ft": 32768,
@@ -235,8 +228,8 @@
 		"oA": 0,
 		"oAP": "/public/images/numbers.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -903,7 +896,33 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/public/sass/3-modules/_buttons.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/public/sass/css/app.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/public/sass/3-modules/_modules-dir.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/public/sass/css/app.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/public/sass/3-modules/_table.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -941,34 +960,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/public/sass/app-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/sass/app-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/public/sass/app.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/public/sass/app-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/public/sass/app.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/public/sass/app.css.map",
-		"oF": 0
 		},
 	"/public/sass/app.sass": {
 		"aP": 0,

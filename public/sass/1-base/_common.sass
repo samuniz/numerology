@@ -1,14 +1,31 @@
 /*COMMON.SASS*/
-body
-    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx)
-        background-image: url(../images/numbers.png) 
-    background: non-repeat   
-    background-color: #cccccc
-    height: 500px
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
 
+html
+    background: url(../images/background.png)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+body, a
+    font-family: $content
+    font-size: $base *1
+    color: $text-color
+    text-decoration: none 
+    #edit 
+        color: $white 
+       
 h1 
     font-family: $title 
-    color: $white 
+    color: $purple 
+    font-size: $base - 2 
+    text-align: left
+
+h2 
+    font-family: $sub-title
+    color: $eggplant 
+    font-size: $base * 4
+    text-align: center    
+
+    
+   
+            

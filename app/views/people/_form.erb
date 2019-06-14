@@ -2,7 +2,7 @@
 <input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
 
 <div>
-    <h1>Add a Person</h1>
+    <h2>Add a Person</h2>
     <label for="first_name">First Name:</label>
     <input type="text" name="first_name" value="<%= @person.first_name %>" />
 </div>
@@ -17,9 +17,8 @@
   <input name="birthdate" type="date" value="<%= @person.birthdate %>" />
 </div>
 
-<div>
-  <input type="submit" />
+<div class= "submit-button"> 
+  <button type="submit" value ="submit"> Submit </button>
 </div>  
-  
 </form>
  
