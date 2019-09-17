@@ -1,21 +1,21 @@
 module ApplicationHelper
   def people_form_method(person)
       if person.new_record?
-        @method = "post"
+        @action= "/people"
       else
-        @method = "put"
+        @action = "/people/#{person.id}"
       end
-      @method
+      @action
   end
-end
+
 
 def people_form_action(person)
     if person.new_record?
-        @action = "/people"
+        @method = "post"
     else 
-        @action = "/people/#{@person.id}"
+        @method = "put"
     end 
-    @action
+    @method
 end 
 
 def people_form_class(person)
@@ -29,9 +29,11 @@ end
 
 def people_form_id(person)
   if person.new_record?
-    @id = "new-person"
+    @form_id = "new-person"
   else 
-    @id = "person-#{@person.id}"
+    @form_id = "person-#{@person.id}"
   end 
-  @id
+  @form_id
+end 
+
 end 
