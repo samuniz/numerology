@@ -22,33 +22,31 @@ end
 
 #Create a new person
 post '/people' do
-  @person = Person.create(first_name: params[:first_name], last_name: params[:last_name], birthdate: params[:birthdate]) 
 
-  if @person.valid?
+  @person = Person.create(first_name: params[:first_name], last_name: params[:last_name], birthdate: params[:birthdate]) 
+  if @person.valid? 
     @person.save
     redirect "/people/#{@person.id}"
+ 
   else
     @person.errors.full_messages.each do |msg|
-      @errors = "#{@errors} #{msg}."
-    end
+      @errors = "#{@errors} #{msg}."  
+  end 
     erb :"/people/new"
   end
-  if params[:birthdate].empty?
-    @person.errors.full_messages.each do |msg|
-      @errors = "#{@errors} #{msg}."
-    end
-    
+
+
+if params[:birthdate].empty?
+  @person.errors.full_messages.each do |msg|
+   
+  end
+  erb :"/people/new"
   elsif params[:birthdate].include?("-") 
     birthdate = params[:birthdate]
   else
     birthdate = Date.strptime(params[:birthdate], "%m%d%Y").strftime("%Y-%m-%d")
-   
   end
-  
-  
-end
-
-
+end 
 #edit a person
 get '/people/:id/edit' do 
   @person = Person.find(params[:id])
