@@ -9,7 +9,7 @@ gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.13'
 gem 'rspec', '~> 3.8'
 gem 'faker', '~> 1.4.3'
 
-gem 'rack', '~> 2.0', '>= 2.0.6'
+gem 'rack', '~> 2.1'
 gem 'rack-test', '~> 1.1'
 gem 'shotgun'
 
