@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', '~> 2.0', '>= 2.0.5'
 gem 'rake', '~> 12.3', '>= 12.3.2'
-gem 'activerecord', '~> 5.2', '>= 5.2.2'
+gem 'activerecord', '~> 6.0'
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.13'
 
